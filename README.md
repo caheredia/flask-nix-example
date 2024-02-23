@@ -4,6 +4,26 @@
 nix build
 ```
 
+### Run the server
+```console
+result/bin/app
+```
+
+### Build with Docker
+```console
+docker build -t flask-example:dev .
+```
+Run server
+```console
+docker run --rm -p 8080:8080 flask-example:dev
+```
+
+### Delete local build
+delete `result` folder, then 
+```console
+nix store delete
+```
+
 ## References
 ##### Flask + Nix + Docker Example
 
